@@ -1,0 +1,8 @@
+
+/*# sourceMappingURL=custom.min.css.map */
+table .dropdown-menu {
+    position: fixed !important;
+    top: 50% !important;
+    left: 92% !important;
+    transform: translate(-92%, -50%) !important;
+}

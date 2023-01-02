@@ -1,0 +1,26 @@
+<meta charset="utf-8" />
+<title>Admin Panel | {{web.webTitle}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="{{web.webDescription}}" name="description" />
+<meta content="{{web.webAuthor}}" name="author" />
+<!-- App favicon -->
+{{#ifEquals web.webFavicon "favicon.png"}}
+<link rel="shortcut icon" href="assets/images/logo-sm.png">
+{{/ifEquals}}
+
+{{#ifNotEquals web.webFavicon "favicon.png"}}
+<link rel="shortcut icon" href="{{web.webFavicon}}">
+{{/ifNotEquals}}
+
+<!-- Layout config Js -->
+<script src="assets/js/layout.js"></script>
+<!-- Bootstrap Css -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!-- Icons Css -->
+<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+<!-- App Css-->
+<link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+<!-- custom Css-->
+<link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+
+{{> (includeCss) }}

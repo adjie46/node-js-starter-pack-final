@@ -1,0 +1,44 @@
+{
+  "name": "admin-panel",
+  "version": "1.0.0",
+  "description": "Admin Panel Node.js Starter Pack",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adjie46/node-js-starter-pack-final.git"
+  },
+  "keywords": [
+    "Admin Panel",
+    "Node.js",
+    "Starter",
+    "Pack"
+  ],
+  "author": "Adjie Kurniawan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adjie46/node-js-starter-pack-final/issues"
+  },
+  "homepage": "https://github.com/adjie46/node-js-starter-pack-final/issues#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "csurf": "^1.11.0",
+    "dotenv": "^16.0.3",
+    "env-cmd": "^10.1.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "form-data": "^4.0.0",
+    "handlebars": "^4.7.7",
+    "hbs": "^4.1.2",
+    "hbs-utils": "^0.0.4",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.20",
+    "streamifier": "^0.1.1",
+    "uuid": "^9.0.0",
+    "uuidv4": "^6.2.13"
+  }
+}
