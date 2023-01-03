@@ -40,6 +40,14 @@ route.get("/webProfile",
     websiteController.getWebDetail
 )
 
+//WEBSITE
+route.put("/webProfile/:id",
+    modeMiddleware.checkMode,
+    tokenAccessMiddleware.checkHeaderToken,
+    jwtDecodeMiddleware.jwtDecode,
+    websiteController.saveWebDetail
+)
+
 //API
 route.get("/settings/api-key",
     modeMiddleware.checkMode,

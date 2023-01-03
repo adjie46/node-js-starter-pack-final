@@ -13,6 +13,8 @@ module.exports = {
     dataNotFound: "Data Not Found",
     updateDataSuccess: "Data Updated",
     updateDataFail: "Data Updated Fail",
+    dataSaved: "Data Berhasil di Simpan",
+    dataNotSaved: "Data Gagal di Simpan",
 
     //API
     generateNewKey: "API Key Generated!",
@@ -20,6 +22,9 @@ module.exports = {
     enabledKey: "API Key Enabled!",
     disabledKey: "API Key Disabled!",
     deletedKey: "API Key Deleted!",
+
+    //WEB
+
 
     //USER
     registerSuccess: "Pendaftaran Berhasil",
