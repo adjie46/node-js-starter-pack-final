@@ -30,21 +30,26 @@
                 </div>
             </div>
             <div class="card-body">
-                <form action="javascript:void(0);">
+                <form id="frmUpdateSettingWeb" autocomplete="off" class="needs-validation" method="post" novalidate>
                     <div class="row">
+                        <input type="hidden" id="webId" name="webId" value="{{web.id}}">
+                        <input type="hidden" id="current_favicon" name="current_favicon" value="{{web.webFavicon}}">
+                        <input type="hidden" id="current_logo" name="current_favicon" value="{{web.webLogo}}">
                         <div class="col-lg-12">
                             <div class="mb-3">
                                 <label for="firstnameInput" class="form-label">Title Website</label>
-                                <input type="text" class="form-control" name="title_web"
-                                    placeholder="Enter Title Website" value="Title Web">
+                                <input type="text" class="form-control" required name="title_web"
+                                    placeholder="Enter Title Website" value="{{web.webTitle}}">
+                                <div class="invalid-feedback">
+                                    Nama Web Tidak Boleh Kosong
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="mb-3 pb-2">
                                 <label for="exampleFormControlTextarea" class="form-label">Description Website</label>
                                 <textarea class="form-control" name="description_website"
-                                    placeholder="Enter your description"
-                                    rows="3">Deskription Website</textarea>
+                                    placeholder="Enter your description" rows="3">{{web.webTitle}}</textarea>
                             </div>
                         </div>
                         <!--end col-->
@@ -52,13 +57,14 @@
                             <div class="mb-3">
                                 <label for="author" class="form-label">Author Website</label>
                                 <input type="text" class="form-control" name="author" placeholder="Author Website"
-                                    value="adjie46@gmail.com">
+                                    value="{{web.webAuthor}}">
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="mb-3">
                                 <label for="favicon" class="form-label">Favicon</label>
-                                <input type="file" class="form-control" name="favicon" placeholder="Upload Your Favicon">
+                                <input type="file" class="form-control" name="favicon"
+                                    placeholder="Upload Your Favicon">
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -68,21 +74,21 @@
                             </div>
                         </div>
                         <!--end col-->
-                        
+
                         <!--end col-->
-                        
+
                         <!--end col-->
-                        
+
                         <!--end col-->
-                        
+
                         <!--end col-->
-                        
+
                         <!--end col-->
-                        
+
                         <!--end col-->
-                        
+
                         <!--end col-->
-                        
+
                         <!--end col-->
                         <div class="col-lg-12">
                             <div class="hstack gap-2 justify-content-end">

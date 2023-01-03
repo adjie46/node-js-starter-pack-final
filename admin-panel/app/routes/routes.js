@@ -10,6 +10,7 @@ const dashboardController = require("../controller/dashboard.controller");
 const errorController = require("../controller/error.controller");
 const menuController = require("../controller/menu.controller");
 const apiController = require("../controller/api.controller");
+const webController = require("../controller/web.controller");
 
 //LOGIN
 route.get("/", authMiddleware.mode, authMiddleware.auth, authController.authPage);
@@ -27,6 +28,10 @@ route.put("/settings/api/disabled/:id", authMiddleware.mode, authMiddleware.unau
 route.put("/settings/api/enabled/:id", authMiddleware.mode, authMiddleware.unauth, apiController.enabledKey);
 route.delete("/settings/api/delete/:id", authMiddleware.mode, authMiddleware.unauth, apiController.deleteKey);
 route.post("/settings/api", authMiddleware.mode, authMiddleware.unauth, apiController.createNewToken);
+
+//WEB SETTING
+route.put("/settings/web", authMiddleware.mode, authMiddleware.unauth, webController.updateWebSetting);
+
 
 //DASHBOARD
 route.get("/dashboard", authMiddleware.mode, authMiddleware.unauth, dashboardController.dashboardPage);

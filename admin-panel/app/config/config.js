@@ -11,5 +11,6 @@ module.exports = {
     nameSpace: process.env.MY_NAMESPACE,
     limitBody: process.env.LIMIT_BODY,
     apiKey: process.env.API_KEY,
-    uploadPath: process.env.UPLOAD_PATH
+    uploadPath: process.env.UPLOAD_PATH,
+    imagePath: "public/images/"
 }
