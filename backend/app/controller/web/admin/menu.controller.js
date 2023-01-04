@@ -59,7 +59,7 @@ exports.showMenu = async (req, res, next) => {
                         ]
                     },
                     order: [
-                        ['createdAt', 'ASC'],
+                        ['createdAt', 'DESC'],
                     ]
                 })
                 menuu[index].menus.subMenuItem = subMenu;
